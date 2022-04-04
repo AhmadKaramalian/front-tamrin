@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        input{
+            
+            --height : 40px;
+            height: var(--height);
+            border-radius: calc(var(--height)/2);
+            padding: 0 24px;
+            text-align: center;
+        }
+        input.filled{
+            color: #FFFFFF;
+            background-color: #6750A4;
+            font-family: Roboto,sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.1;
+        }
+        input.tonal{
+            color: #FFFFFF;
+            background-color:  #E8DEF8;
+            font-family: Roboto,sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.1;
+        }
+        input.outlined{
+            color: #000000;
+            background-color: #FFFBFE;
+            outline-color: #79747E;
+            outline-width: 15px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.1;
+        }
+        button{
+            border: none;
+            background-color: inherit;
+            --height : 40px;
+            height: var(--height);
+            border-radius: calc(var(--height)/2);
+            padding: 0 24px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.1;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="button" value="filled"  class="filled">
+    <br>
+    <input type="button" value="filled tonal" class="tonal" >
+    <br>
+    <input type="button" value="outlined" class="outlined" >
+    <br>
+    
+    <button>text</button>
+</body>
+</html>
