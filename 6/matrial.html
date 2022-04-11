@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>buttons</title>
+        <style>
+            button
+            {
+                display: block;
+                margin: 0 0 10px 0;
+                --height : 40px;
+                height: var(--height);
+                border-radius: calc(var(--height)/2);
+                padding: 0 24px;
+                text-align: center;
+                background-color: #6750A4;
+                color: cornsilk;
+                font-family: Roboto,sans-serif;
+            }
+            .hovered:hover{
+            cursor: pointer;
+            background-color: #ff0;
+            color: rgb(0, 0, 0);
+            }
+            .focus:focus{
+                outline: 0;
+                background-color: #ff0;
+                color: rgb(0, 0, 0);
+            }
+            .press:active{
+                background-color: #ff0;
+                color: rgb(0, 0, 0);
+            }
+            .dissavle:disabled{
+                --on-surface: rgb(28, 27, 31);
+            background: 
+            linear-gradient(
+                rgba(255, 255, 255, 0.88),
+                rgba(255, 255, 255, 0.88)
+            ),
+            var(--on-surface);
+    color:  var(--on-surface);
+            }
+            
+        </style>
+    </head>
+<body>
+    <button> enabled </button>
+    <button class="hovered"> hovered </button>
+    <button class="focus"> focused </button>
+    <button class="press"> pressed </button>
+    <button class="dissavle" disabled> disabled </button>  
+</body>
+</html>
