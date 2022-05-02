@@ -1,0 +1,8 @@
+
+  @import url('card.css') screen and (min-width:481px);
+  
+   
+  @import url('card-480.css') screen and (max-width:480px);
+ 
+   
+/*@import url('layout.css');*/
